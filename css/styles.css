@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #f8f9fa; 
+    color: #212529;            
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+    font-size: 24px;
+}
+
+nav{
+    height: 60px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a2e; 
+    color: #ffffff;
+}
+
+.logo a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    
+}
+
+
+ul{
+    
+    list-style: none;
+    display: flex;    
+}
+ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 12px;
+    transition: background-color 0.3s ease;
+}
+.active{
+    color: red;
+}
+
+ul li a:hover {
+    /* background-color: #4d4d82; */
+    color: #ff0800;
+}
+
+
+
+main{
+    padding: 0 40px;    
+}
+
+section {
+    min-height: 100vh; 
+    padding: 40px 0;  
+    box-sizing: border-box;
+    display: flex;        
+    flex-direction: column;
+    justify-content: center; 
+}
+
+button {
+    background-color: #1a1a2e; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #0f0f1a; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.copyRight{
+    background-color: #000;
+    color: #f8f8f8a6;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
