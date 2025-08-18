@@ -76,6 +76,50 @@ button:hover {
     background-color: #0f0f1a; 
 }
 
+.featured-tyres-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    
+    
+    
+}
+
+#tyre{
+    text-align: center;
+    width: 400px;
+    height: 500px;
+}
+
+.featured-tyres > h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.browse-brands > h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.browse-brands-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.brand{
+    height: 200px;
+    min-width: 300px;
+    background-color: #c9ced3;
+    text-align: center;
+}
+.featured-tyre:hover, .brand:hover{
+    box-shadow: 2px 2px 5px rgb(158, 179, 193);
+}
+
+
+
 
 
 
