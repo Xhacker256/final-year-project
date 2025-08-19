@@ -9,7 +9,7 @@ body{
     background-color: #f8f9fa; 
     color: #212529;            
     font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
-    font-size: 24px;
+    /* font-size: 24px; */
 }
 
 nav{
@@ -80,16 +80,15 @@ button:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
-    
-    
-    
+    gap: 10px; 
 }
 
 #tyre{
+    border: 1px solid;
     text-align: center;
-    width: 400px;
+    min-width: 400px;
     height: 500px;
+    overflow: hidden;
 }
 
 .featured-tyres > h1{
@@ -99,7 +98,6 @@ button:hover {
 
 .browse-brands > h3{
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .browse-brands-container{
