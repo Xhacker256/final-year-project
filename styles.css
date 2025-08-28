@@ -19,7 +19,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: #1a1a2e; 
-    /* color: #ffffff; */
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    overflow: hidden;
+
 }
 
 .logo a {
@@ -46,7 +50,6 @@ ul li a{
 }
 
 ul li a:hover {
-    /* background-color: #4d4d82; */
     color: #ff0800;
 }
 
@@ -95,18 +98,9 @@ h1, h2,h3,h4,h5,h6{
 #tyre{
     width: 300px;
     height: 300px;
-    /* border: 1px solid darkblue; */
     padding: 8px;
 }
 
-/* .featured-tyres > h1{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.browse-brands > h3{
-    text-align: center;
-} */
 
 .browse-brands-container{
     display: flex;
@@ -123,10 +117,6 @@ h1, h2,h3,h4,h5,h6{
     box-shadow: 2px 2px 8px rgb(130, 132, 138);
 }
 
-/* .testimonials h3, h4{
-    text-align: center;
-    margin-bottom: 20px;
-} */
 
 .testimonials-container{
     display: flex;
@@ -157,32 +147,12 @@ h1, h2,h3,h4,h5,h6{
     margin-left: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-wrappper{
+    background-color: red;
+    padding: 450px;
+    display: flex;
+    justify-content: center;
+}
 
 
 
