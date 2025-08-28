@@ -90,9 +90,7 @@ h1, h2,h3,h4,h5,h6{
     justify-content: space-evenly;
     min-width: 100%;
     padding: 50px;
-    /* background-color: skyblue; */
     gap: 10px;
-    /* width:fit-content; */
 }
 
 #tyre{
@@ -121,7 +119,6 @@ h1, h2,h3,h4,h5,h6{
 .testimonials-container{
     display: flex;
     justify-content: center;
-    /* background-color: limegreen; */
     gap: 10px;
     padding: 5px;
     
@@ -147,11 +144,17 @@ h1, h2,h3,h4,h5,h6{
     margin-left: 10px;
 }
 
-.footer-wrappper{
-    background-color: red;
-    padding: 450px;
+.footer-wrapper{
+    padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+.footer-content{
+    padding: 50px;
+    background: lightgray;
+    width: 50%;
+    height: 100%;
 }
 
 
