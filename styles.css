@@ -6,19 +6,21 @@
 
 
 body{
-    background-color: #f8f9fa; 
-    color: #212529;            
-    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+    background-color: #3d618521; 
+    color: darkblue;            
+    font-family: 'Poppins', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
     overflow-x: hidden;
+    
 }
 
+
 nav{
-    height: 60px;
+    font-size: 1.7em;
+    height: auto;
     display: flex;
-    padding: 0 20px;
+    padding: 20px;
     justify-content: space-between;
-    align-items: center;
-    background-color: #1a1a2e; 
+    background-color: rgb(3, 3, 62); 
     position: fixed;
     top: 0px;
     width: 100%;
@@ -53,11 +55,10 @@ ul li a:hover {
     color: #ff0800;
 }
 
-
-
-main{
-    padding: 0 40px;    
+h1,h2,h3,h4,h5,h6{
+    color: darkblue;
 }
+
 
 section {
     min-height: 100vh; 
@@ -80,17 +81,75 @@ button:hover {
     background-color: #0f0f1a; 
     cursor: pointer;
 }
-h1, h2,h3,h4,h5,h6{
+
+.intro_section{
+    height: 100vh;
+    width: auto;
+    background-image: url("/assets/background/pexels-pixabay-164654.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+    position: relative;
+    z-index: -1;
+    
+}
+
+.first_section{
+    height: 100vh;
+    width: 1000px;
+    background-repeat: repeat;
+    background-size:cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px auto;
+    font-size: 1.5em;
+    flex-wrap: wrap;
+    
+    
+}
+/* .first_section  h1,h3{
+    color: darkblue;
+} */
+.first_section  input{
     text-align: center;
-    margin-bottom: 20px;
+    width: 70%;
+    height: 0.3em;
+    font-size: 0.9em;
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.search-button{
+    font-weight: bold;
+    color: #ddd;
+    background-color: darkblue;
+    font-size: 1em;
+    padding: 8px;
+    border-radius: 15px;
+    
+}
+
+
+.search-button:hover{
+    background-color: #ddd;
+    color: darkblue;
 }
 
 .featured-tyres-container{
     display: flex;
     justify-content: space-evenly;
-    min-width: 100%;
-    padding: 50px;
-    gap: 10px;
+    min-width: auto;    
+    /* background-color: #fff; */
 }
 
 #tyre{
@@ -111,29 +170,36 @@ h1, h2,h3,h4,h5,h6{
     width: 300px;
     
 }
-#tyre:hover{
-    box-shadow: 2px 2px 8px rgb(130, 132, 138);
-}
 
+.testimonials{
+    background-color: darkblue;
+}
 
 .testimonials-container{
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 5px;
-    
+    justify-content: space-evenly;
+    height: auto;
 }
 
 .testimony{
-    height: 200px;
-    width: 400px;
-    background: #ddd;
+    color: rgb(167, 167, 237);
+    height: auto;
+    width: auto;
+    background-color: rgb(2, 2, 46);
     text-align: center;
     display: flex;
-    color: #000;
+    justify-content: center;
+    padding: 60px;
+    flex-wrap: wrap;
+    margin: 20px;
     
 }
-.talk-to-us{
+.testimony .clientName{
+    align-self: flex-end;
+    margin-top: 30px;
+    
+}
+.get-in-touch{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -145,7 +211,8 @@ h1, h2,h3,h4,h5,h6{
 }
 
 .footer-wrapper{
-    padding: 10px;
+    color: darkblue;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     
@@ -154,7 +221,15 @@ h1, h2,h3,h4,h5,h6{
     padding: 50px;
     background: lightgray;
     width: 50%;
-    height: 100%;
+    height: auto;
+}
+.submit-btn{
+    color: #ddd;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1a1148;
 }
 
 

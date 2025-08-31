@@ -11,15 +11,14 @@
 <body>
     
     <!-- header -->
-    <header>
 
         
         <nav>
             <!-- logo -->
             <div class="logo">
                 <a href="index.html">
-                    <span style="color: Red; font-size: large;">Sannyu</span>
-                    <span style="font-size: x-small;">Tyre Centre</span>
+                    <span style="color: Red; font-size: 1.4em;">Sannyu</span>
+                    <span style="font-size: 0.6em;">Tyre Centre</span>
                 </a>
             </div>
             <ul>
@@ -29,34 +28,45 @@
                 <li><a href="#">FAQs</a></li>
             </ul>
         </nav>
-    </header>
 
-
-    <!-- main -->
-        <main>
-
-            <section class="search-tyres">
-                <h2>Search Tyres (Full size)</h2>
+    
+                <div class="intro_section">
+                <h1 style="color: #fff;"><span style="font-size: 200px;">GIVING YOU EXTRA </span> <span class="typing-text">MILES</span></h1>
+                
+                </div>
+                
+    
+<hr>       
+<hr>       
+<hr>       
+                <div class="first_section">
+                    <form action="" method="get">
+                        <h1>Search Tyres (Full size)</h1>
                 <input type="text" placeholder="e.g 205/65R15">
 <br>
-                <h3>Width</h3>
-                <input type="text" placeholder="e.g 205">
+                <!-- <h3>Width</h3> -->
+                Width:  <input type="text" placeholder="e.g 205">
 <br>
-                <h3>Profile</h3>
-                <input type="text" placeholder="e.g 65">
+                <!-- <h3>Profile</h3> -->
+                Profile: <input type="text" placeholder="e.g 65">
 <br>
-                <h3>Rim Size</h3>
-                <input type="text" placeholder="e.g 15">
+                <!-- <h3>Rim Size</h3> -->
+                Rim Size: <input type="text" placeholder="e.g 15">
 <br>
                 <h3>Vehicle Make (Optional)</h3>
                 <input type="text" placeholder="e.g Toyota">
-<br><br><br>
+<br>
                 <button class="search-button" onclick="searchItem()">Search</button>
-            </section>
+                    </form>
+                
+                </div>
+                
+    
 <hr>       
 
-            <section class="featured-tyres" style="background-color: #fff;">
-                <h1>Featured Tyres</h1>
+
+            <section class="featured-tyres">
+                <h1 style="text-align: center;">Featured Tyres</h1> <br><br><br>
                 <div class="featured-tyres-container">
 
                     <div class="featured-tyre">
@@ -81,20 +91,19 @@
                     </div>
 
                     <div class="featured-tyre">
-                        <div id="tyre"><img src="/assets/tyres/HP7-KAPSEN-TYRE--.png" alt="tyre" width="100%" height="100%"></div>
+                        <div id="tyre"><img src="/assets/tyres/215-60r17 kapsen.png" alt="tyre" width="100%" height="100%"></div>
                         <br>
                         <p>265/7016 KAPSEN</p>
                         <button>BUY NOW</button>
                     </div>
 
                 </div>
-                
-                <!-- <button style="background-color: transparent; margin-top: 100px;"><a href="#" style="background-color: transparent; color: #333333a2; font-size: 24px;"">See more...</a></button> -->
+        
             </section>
 <hr>
 
             <section class="browse-brands">
-                <h3>Browse Brands</h3>
+                <h1 style="text-align: center;">Browse Brands</h1><br><br><br>
                 <div class="browse-brands-container">
                     <div class="brand"><img src="/assets/brands/farroad logo.png" alt="tyre" width="100%" height="100%" alt="farroad tyre"></div>
                     <div class="brand"><img src="/assets/brands/joyroad logo.webp" alt="tyre" width="100%" height="100%" alt="joyroad tyre"></div>
@@ -104,69 +113,70 @@
             </section>
 <hr>
 
-            <section class="testimonials" style="background-color: #fff;">
-                <h3 style="text-align: center;">Testimonials</h3>
-                <h4 style="text-align: center; opacity: 0.6;">What Our Clients Say</h4>
+            <section class="testimonials">
+                <h3 style="color: white; text-align: center;">Testimonials</h3>
+                <h4 style="color: white; text-align: center; opacity: 0.6;">What Our Clients Say</h4>
 
                 <div class="testimonials-container">
                     <div class="testimony">
-                        <p>Great service and fast delivery</p> <br>
-                        <p>— John Doe</p>
+                        <p>"Great service and fast delivery"</p>
+                        <p class="clientName">— John Doe</p>
                     </div>
                     <div class="testimony">
-                        <p>Great service and fast delivery</p>
-                        <p>— John Doe</p>
+                        <p>"highly recommended tyre dealer. I also got all my four rims well delivered."</p>
+                        <p class="clientName">— Mark Anthony</p>
                     </div>
                     <div class="testimony">
-                        <p>Great service and fast delivery</p>
-                        <p>— John Doe</p>
+                        <p>"The sales team is so humble and understanding, I also got to learn a number of things about my vehicle that I didn't know, thanks always"</p>
+                        <p class="clientName">— Kalema Bosco</p>
                     </div>
                 </div>
 
-                <!-- talk to us (whatsApp link) -->
+                <!-- get in touch (whatsApp link) -->
                 <div class="whatsApp-us">
-                    <div class="talk-to-us">
+                    <div class="get-in-touch">
                         <a href="https://wa.link/hfv0x7">
                             <img src="/assets/logos/whatsapp_logo.png" alt="whatsApp logo" width="100%" height="100%">
                         </a>
                     </div>
-                    <p style="margin-left: 10px;">Talk To Us</p>
+                    <p style="color: rgb(102, 102, 239); margin-left: 10px;">Get in Touch</p>
                 </div>
             </section>
             <hr>
         </main>
 
-    <!-- footer -->
-        <footer>
+<!-- footer -->
             <div class="footer-wrapper">
                 <div class="footer-content" id="contact-us">
-                    <h2>Contact Us</h2>
-                    <h4>Send Us a Message</h4>
+                    <h2>Contact Us</h2> <br>
+                    <h4>Send Us a Message</h4> <br>
                     Name: <input type="text" placeholder="Enter Your Name"><br><br>
-                    Email: <input type="email" placeholder="Enter Your Email"><br>
+                    Email: <input type="email" placeholder="Enter Your Email"><br><br><br><br>
 
-                    <input type="text" placeholder="Your Message...">
-                    <input type="submit">
+                    <input type="text" placeholder="Your Message..."> <br><br>
+                    <input type="submit" class="submit-btn">
                 </div>
 
                 <div class="footer-content" id="find-us">
-                    <h2>Find Us</h2>
-                    <pre>
-                        Shamba Complex Next To Mukwano Mall
-                        Kyaggwe Road
-                        P.O. Box ###
-                        Kampala, Uganda
-                        <!-- phone icon --> 256 - xxx - xxx - xxx
+                    <h2>Find Us</h2> <br>
+                    <p>
+                        Shamba Complex Next To Mukwano Mall <br> <br>
+                        Kyaggwe Road <br> <br>
+                        P.O. Box ### <br><br>
+                        Kampala, Uganda <br><br><br>
+                        <!-- phone icon --> 256 - xxx - xxx - xxx <br><br>
                         <!-- envelope icon --> info@sannyutyrecentre.co.ug
-                    </pre>
+                    </p>
                 </div>
             </div>
 <hr>
+
+
             <!-- copyRight Section -->
             <div class="copyRight">
                 <p>&copy; 2025 SannyuTyreCentre All Rights Reserved</p>
             </div>
-        </footer>
+
 
 </body>
 </html>
