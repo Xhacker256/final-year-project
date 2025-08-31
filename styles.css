@@ -8,7 +8,7 @@
 body{
     background-color: #3d618521; 
     color: darkblue;            
-    font-family: 'Poppins', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+    font-family: 'Times New Roman', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
     overflow-x: hidden;
     
 }
@@ -48,11 +48,11 @@ ul li a{
     transition: background-color 0.3s ease;
 }
 .active{
-    color: red;
+    color: rgba(17, 103, 195, 0.881);
 }
 
 ul li a:hover {
-    color: #ff0800;
+    color:  rgba(17, 103, 195, 0.881);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -85,7 +85,7 @@ button:hover {
 .intro_section{
     height: 100vh;
     width: auto;
-    background-image: url("/assets/background/pexels-pixabay-164654.jpg");
+    background-image: url("/assets/background/pexels-geralt-21694.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     overflow: hidden;
@@ -96,7 +96,12 @@ button:hover {
     padding: 10px 0;
     position: relative;
     z-index: -1;
+
     
+}
+.intro_section > h1{
+    color: darkblue;
+    text-shadow: 5px 5px 8px rgb(128, 193, 255);
 }
 
 .first_section{
@@ -116,9 +121,7 @@ button:hover {
     
     
 }
-/* .first_section  h1,h3{
-    color: darkblue;
-} */
+
 .first_section  input{
     text-align: center;
     width: 70%;
@@ -241,3 +244,8 @@ button:hover {
     text-align: center;
     width: 100%;
 }
+
+
+
+
+
