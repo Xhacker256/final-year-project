@@ -6,7 +6,8 @@
 
 
 body{
-    background-color: #3d618521; 
+    /* background-color: #3d618521;  */
+    background: linear-gradient(90deg, #0554dd, #ee098f);
     color: darkblue;            
     font-family: 'Times New Roman', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
     overflow-x: hidden;
@@ -96,12 +97,12 @@ button:hover {
     padding: 10px 0;
     position: relative;
     z-index: -1;
-
+    
     
 }
 .intro_section > h1{
-    color: darkblue;
-    text-shadow: 5px 5px 8px rgb(128, 193, 255);
+    color: rgb(246, 239, 239);
+    text-shadow: 5px 5px 8px darkblue;
 }
 
 .first_section{
@@ -229,7 +230,7 @@ button:hover {
 .submit-btn{
     color: #ddd;
     font-size: 20px;
-    padding: 20px;
+    padding: 8px;
     border: none;
     border-radius: 10px;
     background-color: #1a1148;
@@ -238,13 +239,12 @@ button:hover {
 
 
 .copyRight{
-    background-color: #000;
+    background-color: #1a1148;
     color: #f8f8f8a6;
     padding: 10px;
     text-align: center;
     width: 100%;
 }
-
 
 
 
