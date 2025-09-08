@@ -5,181 +5,370 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sannyu Tyre Centre</title>
     <link rel="stylesheet" href="/styles.css">
-    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
 </head>
 <body>
     
     <!-- header -->
-
-        
-        <nav>
-            <!-- logo -->
-            <div class="logo">
-                <a href="index.html">
-                    <span style="color: red; font-size: 1.4em; font-family: 'Times New Roman', Times, serif;">Sannyu</span>
-                    <span style="font-size: 0.6em; color: #ddd;">Tyre Centre</span>
-                </a>
-            </div>
-            <ul>
-                <li><a href="#" class="active">HOME</a></li>
-                <li><a href="#">ORDER</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">FAQs</a></li>
+<header>
+    <nav>
+        <!-- nav links -->
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa fa-times"></i></a></li>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="about_us">ABOUT</a></li>
+                <li><a href="#discover">DISCOVER</a></li>
+                <li><a href="#contact-cta">CONTACT</a></li>
+                <li><a href="/faqs.html">FAQs</a></li>
             </ul>
-        </nav>
 
-    
-                <div class="intro_section">
-                <h1 class="gradient-text"><span style="font-size: 2.1em;">GIVING YOU EXTRA </span> <br><br>
-                    <span class="typing-text" id="typing-text" style="font-size: 1.8em;">MILES | VALUE & PERFOMANCE</span>
-</h1>
-                
-</div>
-<hr>                 
+            <ul>
+                <li><a href="#"><span style="color: red; font-weight: bold; font-size: 30px;">SANNYU</span><span style="font-weight: bold; font-size: smaller;">Tyre Centre</span></a></li>
+                <li class="hideOnMobile"><a href="/index.html">HOME</a></li>
+                <li class="hideOnMobile"><a href="#about_us">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="#discover">DISCOVER</a></li>
+                <li class="hideOnMobile"><a href="#contact-cta">CONTACT</a></li>
+                <li class="hideOnMobile"><a href="/faqs.html">FAQs</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa fa-bars"></i></a></li>
+            </ul>
+    </nav>
+</header>
 
-        <div class="first_section">
-            <form action="" method="get">
-                <h2>Search Tyres (Full size)</h2>
-                    <input type="text" placeholder="e.g 205/65R15">
-    <br>
-                    
-                    Width:  <input type="text" placeholder="e.g 205">
-    <br>
-                    
-                    Profile: <input type="text" placeholder="e.g 65">
-    <br>
-                    
-                    Rim Size: <input type="text" placeholder="e.g 15">
-    <br>
-                    
-                    Vehicle Make (Optional): <input type="text" placeholder="e.g Toyota">
-    <br>
-                    <button class="search-button" onclick="searchItem()">Search</button>
-            </form>
-                
+<main>
+
+    <!-- home page Slider images -->
+<section id="home-slider" style="position: relative; overflow: hidden; width: 100%; max-height: 500px;">
+    <div class="slider-container" style="display: flex; transition: transform 1s ease-in-out; width: 300%;">
+        <!-- Slide 1 -->
+        <div class="slide" style="min-width: 100%; height: 500px;">
+        <img src="/assets/background/pexels-geralt-21694.jpg" alt="Slide 1" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide" style="min-width: 100%; height: 500px;">
+        <img src="/assets/background/pexels-koprivakart-3399938.jpg" alt="Slide 2" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide" style="min-width: 100%; height: 500px;">
+        <img src="/assets/background/pexels-pixabay-164654.jpg" alt="Slide 3" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
     </div>
-    
-<hr>
+    </section>
 
-            <section class="featured-tyres" style="background: linear-gradient(180deg, #1f0cef, #ffffff);">
-                <h1 style="text-align: center;font-size:3.6em;">Featured Tyres</h1> <br><br><br>
-                <div class="featured-tyres-container">
+    <section id="welcome" style="padding: 60px 20px; background-color: #1a1a1a; color: #ffffff; font-family: Arial, sans-serif; text-align: center;">
+    <div style="max-width: 900px; margin: 0 auto;">
+        <h1 style="font-size: 48px; margin-bottom: 20px;">Welcome to SANNYU TYRE CENTRE</h1>
+        <p style="font-size: 20px; margin-bottom: 30px; line-height: 1.6;">
+        Your one-stop destination for top-quality tyres and stylish rims. Whether you're after performance, safety, or aesthetics — we’ve got the perfect match for your vehicle.
+        </p>
+        <a href="#about_us" style="display: inline-block; padding: 15px 30px; background-color: #ffcc00; color: #000; text-decoration: none; font-size: 18px; border-radius: 5px; font-weight: bold;">
+        Learn More About Us
+        </a>
+    </div>
+</section>
 
-                    <div class="featured-tyre">
-                        <div id="tyre"><img src="/assets/tyres/215-60r17 kapsen.png" alt="tyre" width="100%" height="100%"></div>
-                        <br>
-                        <p>215/60R17 KAPSEN</p>
-                        <button>BUY NOW</button>
-                    </div>
+    <!-- About Us Section -->
+<section id="about_us" style="padding: 40px; background-color: #f8f8f8; font-family: Arial, sans-serif;">
+    <div style="max-width: 900px; margin: 0 auto;">
+        <h2 style="font-size: 32px; color: #333;">About Us</h2>
 
-                    <div class="featured-tyre">
-                        <div id="tyre"><img src="/assets/tyres/215-60r17 kapsen.png" alt="tyre" width="100%" height="100%"></div>
-                        <br>
-                        <p>215/60R17 KAPSEN</p>
-                        <button>BUY NOW</button>
-                    </div>
+        <p style="font-size: 18px; color: #555; line-height: 1.6;">
+        We Are <strong>Sannyu Tyre Centre</strong> — your trusted destination for high-quality tyres and rims.
+        </p>
 
-                    <div class="featured-tyre">
-                        <div id="tyre"><img src="/assets/tyres/215-60r17 kapsen.png" alt="tyre" width="100%" height="100%"></div>
-                        <br>
-                        <p>215/60R17 KAPSEN</p>
-                        <button>BUY NOW</button>
-                    </div>
+        <p style="font-size: 18px; color: #555; line-height: 1.6;">
+        With years of experience in the automotive industry, we specialize in providing premium wheels and tyres for all types of vehicles — from everyday commuters to high-performance machines. Whether you're after reliability, style, or performance, we’ve got the perfect fit for your ride.
+        </p>
 
-                    <div class="featured-tyre">
-                        <div id="tyre"><img src="/assets/tyres/215-60r17 kapsen.png" alt="tyre" width="100%" height="100%"></div>
-                        <br>
-                        <p>265/7016 KAPSEN</p>
-                        <button>BUY NOW</button>
-                    </div>
+        <p style="font-size: 18px; color: #555; line-height: 1.6;">
+        At the heart of our business is a passion for quality and customer satisfaction. We work with top local and international brands to ensure every product we offer meets the highest standards for safety, durability, and design.
+        </p>
 
-                </div>
+        <h3 style="font-size: 24px; color: #333; margin-top: 30px; text-align: center;">What sets us apart?</h3>
         
-            </section>
+        <ul style="font-size: 18px; color: #555; line-height: 1.8; padding-left: 20px; list-style: none;">
+        <li style="margin-bottom: 10px;">
+            <i class="fas fa-check-circle" style="color: #ffcc00; margin-right: 10px;"></i>
+            <strong>Expert Guidance</strong> – Our knowledgeable team is always ready to help you choose the right tyres and rims based on your vehicle, driving habits, and budget.
+        </li>
+        <li style="margin-bottom: 10px;">
+            <i class="fas fa-check-circle" style="color: #ffcc00; margin-right: 10px;"></i>
+            <strong>Competitive Pricing</strong> – We offer some of the best prices in the market without compromising on quality.
+        </li>
+        <li style="margin-bottom: 10px;">
+            <i class="fas fa-check-circle" style="color: #ffcc00; margin-right: 10px;"></i>
+            <strong>Fast & Reliable Service</strong> – From selection to fitting, we make the process smooth, professional, and efficient.
+        </li>
+        <li style="margin-bottom: 10px;">
+            <i class="fas fa-check-circle" style="color: #ffcc00; margin-right: 10px;"></i>
+            <strong>After-Sales Support</strong> – We stand by our products and are here to support you even after the sale.
+        </li>
+        </ul>
 
-<hr>
-            <section class="browse-brands" style="background-color: #fff;">
-                <h1 style="text-align: center; font-size:3.6em; opacity: 0.7;">Browse Brands</h1><br><br><br>
-                <div class="browse-brands-container">
-                    <div class="brand"><img src="/assets/brands/farroad logo.png" alt="tyre" width="100%" height="100%" alt="farroad tyre"></div>
-                    <div class="brand"><img src="/assets/brands/joyroad logo.webp" alt="tyre" width="100%" height="100%" alt="joyroad tyre"></div>
-                    <div class="brand"><img src="/assets/brands/kapsen.png" alt="tyre" width="100%" height="100%" alt="kapsen tyre"></div>
-                    <div class="brand"><img src="/assets/brands/linglong-tire-logo-png_seeklogo-499858.png" alt="linglong tyre" width="100%" height="100%" alt="brand"></div>
-                </div>
-            </section>
-<hr>
+        <br><br>
 
-            <section class="testimonials">
-                <h3 style="text-align: center; font-size: 3.6em;">Testimonials</h3>
-                <h4 style="text-align: center; opacity: 0.6; font-size: 1.3em;">What Our Clients Say</h4>
+        <p style="font-size: 18px; color: #555; line-height: 1.6;">
+        Whether you're upgrading your look, replacing worn-out tyres, or seeking better performance, we’re here to make it easy and affordable.
+        </p>
 
-                <div class="testimonials-container">
-                    <div class="testimony">
-                        <p>"Great service and fast delivery"</p>
-                        <p class="clientName">— John Doe</p>
-                    </div>
-                    <div class="testimony">
-                        <p>"highly recommended tyre dealer. I also got all my four rims well delivered."</p>
-                        <p class="clientName">— Mark Anthony</p>
-                    </div>
-                    <div class="testimony">
-                        <p>"The sales team is so humble and understanding, I also got to learn a number of things about my vehicle that I didn't know, thanks always"</p>
-                        <p class="clientName">— Kalema Bosco</p>
-                    </div>
-                </div>
+        <p style="font-size: 18px; color: #555; line-height: 1.6;">
+        Come visit us in-store or browse our collection online — and drive away with confidence.
+        </p>
 
-                <!-- get in touch (whatsApp link) -->
-                <div class="whatsApp-us">
-                    <div class="get-in-touch">
-                        <a href="https://wa.link/hfv0x7">
-                            <img src="/assets/logos/whatsapp_logo.png" alt="whatsApp logo" width="100%" height="100%">
-                        </a>
-                    </div>
-                    <p style="color: rgb(102, 102, 239); margin-left: 10px;">Get in Touch</p>
-                </div>
-            </section>
-            <hr>
-        </main>
+        <p style="font-size: 20px; font-weight: bold; color: #222; margin-top: 20px;">
+        <strong>Sannyu Tyre Centre</strong> — Where Quality Meets the Road.
+        </p>
+    </div>
+</section>
 
-<!-- footer -->
-            <div class="footer-wrapper">
-                <div class="footer-content" id="contact-us">
-                    <h2>Contact Us</h2> <br>
-                    <h4>Send Us a Message</h4> <br>
-                    Name: <input type="text" placeholder="Enter Your Name"><br><br>
-                    Email: <input type="email" placeholder="Enter Your Email"><br><br><br><br>
 
-                    <input type="text" placeholder="Your Message..."> <br><br>
-                    <input type="submit" class="submit-btn">
-                </div>
+        <section id="discover" style="padding: 60px 20px; background-color: #ffffff; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+        <h2 style="font-size: 36px; margin-bottom: 20px; color: #333;">Discover Our Tyres & Rims</h2>
+        <p style="font-size: 18px; color: #666; margin-bottom: 40px;">
+        Browse our curated collection of top-quality tyres and stylish rims for every vehicle type and personality.
+        </p>
 
-                <div class="footer-content" id="find-us">
-                    <h2>Find Us</h2> <br>
-                    <p>
-                        Shamba Complex Next To Mukwano Mall <br> <br>
-                        Kyaggwe Road <br> <br>
-                        P.O. Box ### <br><br>
-                        Kampala, Uganda <br><br><br>
-                        <!-- phone icon --> 256 - xxx - xxx - xxx <br><br>
-                        <!-- envelope icon --> info@sannyutyrecentre.co.ug
-                    </p>
-                </div>
-
-                <div class="footer-content">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.757321580627!2d32.569963574399665!3d0.3168269640264035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb7cfcaac797%3A0x35ad6cc1a1f721f6!2sShamba%20Complex!5e0!3m2!1sen!2sug!4v1756660279482!5m2!1sen!2sug" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+        
+        <!-- Product 1 -->
+        <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+            <img src="/assets/images/sportRim-removebg-preview.png" alt="Sporty Black Rim" style="width: 100%; height: auto;">
+            <div style="padding: 15px;">
+            <h4 style="margin: 0; font-size: 18px; color: #222;">Sporty Black Rim</h4>
             </div>
-<hr>
+        </div>
+        <!-- Product 2 -->
+        <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+            <img src="/assets/images/sportRim-removebg-preview.png" alt="Sleek Alloy Rim" style="width: 100%; height: auto;">
+            <div style="padding: 15px;">
+            <h4 style="margin: 0; font-size: 18px; color: #222;">Sleek Alloy Rim</h4>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+            <img src="/assets/images/sportRim-removebg-preview.png" alt="Sporty Black Rim" style="width: 100%; height: auto;">
+            <div style="padding: 15px;">
+            <h4 style="margin: 0; font-size: 18px; color: #222;">Sporty Black Rim</h4>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+            <img src="/assets/images/sportRim-removebg-preview.png" alt="Sporty Black Rim" style="width: 100%; height: auto;">
+            <div style="padding: 15px;">
+            <h4 style="margin: 0; font-size: 18px; color: #222;">Sporty Black Rim</h4>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+            <img src="/assets/images/sportRim-removebg-preview.png" alt="Sporty Black Rim" style="width: 100%; height: auto;">
+            <div style="padding: 15px;">
+            <h4 style="margin: 0; font-size: 18px; color: #222;">Sporty Black Rim</h4>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+            <img src="/assets/images/sportRim-removebg-preview.png" alt="Sporty Black Rim" style="width: 100%; height: auto;">
+            <div style="padding: 15px;">
+            <h4 style="margin: 0; font-size: 18px; color: #222;">Sporty Black Rim</h4>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+            <img src="/assets/images/sportRim-removebg-preview.png" alt="Sporty Black Rim" style="width: 100%; height: auto;">
+            <div style="padding: 15px;">
+            <h4 style="margin: 0; font-size: 18px; color: #222;">Sporty Black Rim</h4>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+            <img src="/assets/images/sportRim-removebg-preview.png" alt="Sporty Black Rim" style="width: 100%; height: auto;">
+            <div style="padding: 15px;">
+            <h4 style="margin: 0; font-size: 18px; color: #222;">Sporty Black Rim</h4>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+        
+
+<!-- Contact CTA Section -->
+<section id="contact-cta" style="padding: 60px 20px; background-color: #f5f5f5; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
+
+        <!-- Text Content -->
+        <div style="flex: 1 1 300px; min-width: 250px;">
+        <h2 style="font-size: 32px; color: #333; margin-bottom: 15px;">Talk to Us Today</h2>
+        <p style="font-size: 18px; color: #666; line-height: 1.6;">
+            Have questions about the right tyre or rim for your vehicle? Our team is here to help you find the perfect match.
+            Get in touch for expert advice, quotes, or assistance with your order.
+        </p>
+        </div>
+
+        <!-- CTA + Icons -->
+        <div style="flex: 0 1 auto; text-align: center;">
+        <!-- Main Contact Button -->
+        <a href="#contact" style="display: inline-block; padding: 15px 30px; background-color: #ffcc00; color: #000; font-size: 18px; font-weight: bold; text-decoration: none; border-radius: 5px; margin-bottom: 10px;">
+            <i class="fas fa-phone-alt" style="margin-right: 8px;"></i>
+            <i class="fas fa-envelope" style="margin-right: 5px;"></i>
+            Contact Us
+        </a>
+
+        <!-- WhatsApp Button -->
+        <div style="margin-top: 10px;">
+            <a href="https://wa.me/+256770476146" target="_blank" style="display: inline-block; padding: 12px 25px; background-color: #25D366; color: #fff; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px;">
+            <i class="fab fa-whatsapp" style="margin-right: 8px;"></i> Chat on WhatsApp
+            </a>
+        </div>
+
+        <!-- Contact Info -->
+        <div style="font-size: 16px; color: #555; margin-top: 15px;">
+            <div><i class="fas fa-phone-alt" style="color: #ffcc00; margin-right: 6px;"></i> +123 456 7890</div>
+            <div><i class="fas fa-envelope" style="color: #ffcc00; margin-right: 6px;"></i> support@yourdomain.com</div>
+            <div><i class="fab fa-whatsapp" style="color: #25D366; margin-right: 6px;"></i> WhatsApp: +123 456 7890</div>
+        </div>
+        </div>
+    </div>
+</section>
 
 
 
-            <!-- copyRight Section -->
-            <div class="copyRight">
-                <p>&copy; 2025 SannyuTyreCentre All Rights Reserved</p>
+    <!-- Testimonials Carousel Section -->
+    <section id="testimonials" style="padding: 60px 20px; background-color: #ffffff; font-family: Arial, sans-serif;">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2 style="font-size: 36px; color: #333; margin-bottom: 40px;">What Our Customers Say</h2>
+
+        <div class="testimonial-carousel" style="position: relative; overflow: hidden;">
+        <!-- Slides Container -->
+        <div class="carousel-slides" style="display: flex; transition: transform 0.5s ease;">
+
+            <!-- Testimonial Slide Template -->
+            <div class="testimonial-slide" style="min-width: 100%; padding: 20px; box-sizing: border-box;">
+            <div style="font-size: 60px; color: #ffcc00; margin-bottom: 15px;">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <p style="font-size: 16px; color: #555;">“Excellent service! Got the perfect rims for my car and they look amazing. Highly recommend this shop!”</p>
+            <div style="color: #ffcc00; font-size: 18px; margin: 10px 0;">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <h4 style="font-size: 18px; color: #222;">— James K.</h4>
             </div>
 
+            <div class="testimonial-slide" style="min-width: 100%; padding: 20px; box-sizing: border-box;">
+            <div style="font-size: 60px; color: #ffcc00; margin-bottom: 15px;">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <p style="font-size: 16px; color: #555;">“They helped me choose the right tyres for long-distance driving. Smooth experience and fast installation.”</p>
+            <div style="color: #ffcc00; font-size: 18px; margin: 10px 0;">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            </div>
+            <h4 style="font-size: 18px; color: #222;">— Maria L.</h4>
+            </div>
 
-<script defer src="https://static.getbutton.io/widget/bundle.js?id=D7mel" ></script>
+            <div class="testimonial-slide" style="min-width: 100%; padding: 20px; box-sizing: border-box;">
+            <div style="font-size: 60px; color: #ffcc00; margin-bottom: 15px;">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <p style="font-size: 16px; color: #555;">“Affordable prices and great customer service. I’ll definitely come back when I need new tyres.”</p>
+            <div style="color: #ffcc00; font-size: 18px; margin: 10px 0;">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <h4 style="font-size: 18px; color: #222;">— Ahmed S.</h4>
+            </div>
+
+            <div class="testimonial-slide" style="min-width: 100%; padding: 20px; box-sizing: border-box;">
+            <div style="font-size: 60px; color: #ffcc00; margin-bottom: 15px;">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <p style="font-size: 16px; color: #555;">“The new rims changed the whole look of my car. Quality products and a very helpful team!”</p>
+            <div style="color: #ffcc00; font-size: 18px; margin: 10px 0;">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            </div>
+            <h4 style="font-size: 18px; color: #222;">— Laura M.</h4>
+            </div>
+
+            <div class="testimonial-slide" style="min-width: 100%; padding: 20px; box-sizing: border-box;">
+            <div style="font-size: 60px; color: #ffcc00; margin-bottom: 15px;">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <p style="font-size: 16px; color: #555;">“Super quick service and they had exactly what I needed in stock. Can’t ask for more!”</p>
+            <div style="color: #ffcc00; font-size: 18px; margin: 10px 0;">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            </div>
+            <h4 style="font-size: 18px; color: #222;">— Brian T.</h4>
+            </div>
+
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button id="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: #ffcc00; border: none; padding: 10px 15px; font-size: 20px; cursor: pointer;">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: #ffcc00; border: none; padding: 10px 15px; font-size: 20px; cursor: pointer;">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        </div>
+    </div>
+</section>
+
+</main>
+
+
+    <!-- Footer Section -->
+<footer style="background-color: #1a1a1a; color: #ffffff; padding: 40px 20px; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between;">
+
+        <!-- Contact Info -->
+        <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 15px; color: #ffcc00;">Contact Us</h3>
+        <p><i class="fas fa-phone-alt" style="color: #ffcc00;"></i> <a href="tel:+1234567890" style="color: #ffffff; text-decoration: none;">+123 456 7890</a></p> <br>
+        <p><i class="fas fa-envelope" style="color: #ffcc00;"></i> <a href="mailto:info@sannyutyrecenter.com" style="color: #ffffff; text-decoration: none;">info@sannyutyrecentre.com</a></p>
+        </div>
+
+        <!-- Location Info -->
+        <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 15px; color: #ffcc00;">Our Location</h3>
+        <p><i class="fas fa-map-marker-alt" style="color: #ffcc00;"></i>Shamba Complex - Along Kyaggwe Road <br><br> Kampala, Uganda</p>
+        </div>
+
+        <!-- Google Map -->
+        <div style="flex: 1 1 350px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.757321580627!2d32.56996357435331!3d0.3168269640264798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb7cfcaac797%3A0x35ad6cc1a1f721f6!2sShamba%20Complex!5e0!3m2!1sen!2sug!4v1757337336167!5m2!1sen!2sug" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div style="margin-top: 40px; text-align: center; border-top: 1px solid #444; padding-top: 20px; font-size: 14px; color: #ccc;">
+        &copy; <script>document.write(new Date().getFullYear());</script> Sannyu Tyre Centre. All rights reserved.
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top" style="
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+        background-color: #ffcc00;
+        color: #000;
+        border: none;
+        padding: 12px 16px;
+        border-radius: 50%;
+        font-size: 18px;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        display: none;
+    ">
+    <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="/main.js"></script>
 </body>
 </html>
