@@ -7,8 +7,8 @@
 
 body{
     /* background-color: #3d618521;  */
-    background: linear-gradient(90deg, #0554dd, #ee098f);
-    color: darkblue;            
+    background: linear-gradient(180deg, #011c49, #1f0cef);
+    /* color: darkblue;             */
     font-family: 'Times New Roman', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
     overflow-x: hidden;
     
@@ -21,11 +21,11 @@ nav{
     display: flex;
     padding: 20px;
     justify-content: space-between;
-    background-color: rgb(3, 3, 62); 
-    position: fixed;
+    background-color: rgb(0, 0, 52);
+    /* position: fixed;
     top: 0px;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; */
 
 }
 
@@ -43,22 +43,23 @@ ul{
     display: flex;    
 }
 ul li a{
-    color: #ffffff;
+    font-weight: bold;
+    color: rgba(182, 178, 178, 0.787);
     text-decoration: none;
     padding: 0 12px;
     transition: background-color 0.3s ease;
 }
 .active{
-    color: rgba(17, 103, 195, 0.881);
+    color: rgb(255, 255, 255);
 }
 
 ul li a:hover {
-    color:  rgba(17, 103, 195, 0.881);
+    color:  rgba(253, 254, 255, 0.881);
 }
 
-h1,h2,h3,h4,h5,h6{
+/* h1,h2,h3,h4,h5,h6{
     color: darkblue;
-}
+} */
 
 
 section {
@@ -68,6 +69,7 @@ section {
     display: flex;        
     flex-direction: column;
     justify-content: center; 
+    
 }
 
 button {
@@ -86,7 +88,7 @@ button:hover {
 .intro_section{
     height: 100vh;
     width: auto;
-    background-image: url("/assets/background/pexels-geralt-21694.jpg");
+    background-image: url("/assets/background/pexels-pixabay-164654.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     overflow: hidden;
@@ -108,35 +110,29 @@ button:hover {
 .first_section{
     height: 100vh;
     width: 1000px;
-    background-repeat: repeat;
-    background-size:cover;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     padding: 20px;
     margin: 20px auto;
-    font-size: 1.5em;
     flex-wrap: wrap;
-    
+    color: rgba(245, 245, 245, 0.637);
+    text-align: center;
     
 }
 
 .first_section  input{
     text-align: center;
-    width: 70%;
+    width: 100%;
     height: 0.3em;
-    font-size: 0.9em;
     padding: 25px;
     display: flex;
     justify-content: space-evenly;
     
 }
 .search-button{
-    font-weight: bold;
     color: #ddd;
-    background-color: darkblue;
+    background-color: rgb(0, 0, 70);
     font-size: 1em;
     padding: 8px;
     border-radius: 15px;
@@ -145,8 +141,8 @@ button:hover {
 
 
 .search-button:hover{
-    background-color: #ddd;
-    color: darkblue;
+    background-color: rgb(1, 1, 91);
+    color: rgb(177, 177, 181);
 }
 
 .featured-tyres-container{
@@ -176,8 +172,9 @@ button:hover {
 }
 
 .testimonials{
-    background-color: darkblue;
+    background: linear-gradient(180deg, #ffffff, #0554dd);
 }
+
 
 .testimonials-container{
     display: flex;
@@ -186,7 +183,7 @@ button:hover {
 }
 
 .testimony{
-    color: rgb(167, 167, 237);
+    color: rgb(137, 173, 255);
     height: auto;
     width: auto;
     background-color: rgb(2, 2, 46);
@@ -215,7 +212,7 @@ button:hover {
 }
 
 .footer-wrapper{
-    color: darkblue;
+    color: rgb(149, 149, 255);
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -223,7 +220,7 @@ button:hover {
 }
 .footer-content{
     padding: 50px;
-    background: lightgray;
+    background: rgb(9, 4, 105);
     width: 50%;
     height: auto;
 }
@@ -239,8 +236,8 @@ button:hover {
 
 
 .copyRight{
-    background-color: #1a1148;
-    color: #f8f8f8a6;
+    background-color: #000000;
+    color: #fffcfc;
     padding: 10px;
     text-align: center;
     width: 100%;
