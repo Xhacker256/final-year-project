@@ -17,6 +17,7 @@ function showSidebar(){
         current = (current + 1) % totalNoOfSlides;
         slider.style.transform = `translateX(-${current * 100}%)`;
     }, 4000); // Change slide every 4 seconds
+    
 //faq 
     var acc = document.getElementsByClassName("accordion");
     var i;
